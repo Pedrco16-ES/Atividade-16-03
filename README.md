@@ -59,7 +59,6 @@ class Freelancer implements Trabalhavel, Programavel, Remuneravel {
 class SistemaRH {
   private funcionarios: Trabalhavel[];
 
-  // Dependência injetada via construtor
   constructor(funcionarios: Trabalhavel[]) {
     this.funcionarios = funcionarios;
   }
@@ -69,7 +68,6 @@ class SistemaRH {
   }
 }
 
-// Uso
 const sistema = new SistemaRH([
   new Gerente(),
   new Desenvolvedor(),
